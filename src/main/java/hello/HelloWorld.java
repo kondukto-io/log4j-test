@@ -3,6 +3,9 @@ package hello;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.*;
+import java.util.*;
+
 public class HelloWorld {
 
   private static final Logger logger = LogManager.getLogger(HelloWorld.class);
@@ -18,5 +21,9 @@ public class HelloWorld {
     logger.error("We've just greeted the user!");
     logger.fatal("We've just greeted the user!");
 
+  }
+
+  public static void printHelloWorld() {
+    System.out.println("Hello World!");
   }
 }
